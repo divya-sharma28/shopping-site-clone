@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT</title>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://kit.fontawesome.com/08c834e524.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+
+<body>
+
+  <!-- ========================================================================================== -->
+  <!-- ---------------------------------------- HEADER ------------------------------------------ -->
+  <!-- ========================================================================================== -->
+  <header class="bg-dark ps-3 pe-5"> 
+    <div class="d-lg-flex px-4 py-2 header-top align-items-center justify-content-between text-center">
+      <span class="small text-white">Free shipping • Free 30 days return • Express delivery</span>
+      <ul class=" list-unstyled m-0">
+        <li class=" list-inline-item border-end border-secondary pe-3"> <img src="../IMAGES/flag.jpg" alt=""></li>
+        <li class=" list-inline-item  border-end border-secondary pe-3"> <a href="" class=" text-decoration-none small text-white"> My Accounts</a></li>
+        <li class=" list-inline-item">
+          <form action="">
+            <select class=" bg-transparent small text-white gy-5 border-0" name="country" id="">
+              <option class="bg-dark small" value="USD" > USD</option>
+              <option class="bg-dark small" value="JPN">JPN</option>
+              <option class="bg-dark small" value="BAN">BAN</option>
+            </select>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- ========================================================================================== -->
+  <!-- ---------------------------------------- NAVBAR ------------------------------------------ -->
+  <!-- ========================================================================================== -->
+
+  <!-- navbar -->
+    <div class=" sticky-lg-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 shadow-sm position-relative sticky-lg-top">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand mx-auto ps-md-3" href="index.html">
+            <img src="../IMAGES/logo-img.png" alt="">
+          </a>
+          <button class="navbar-toggler position-absolute border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav text-center  mb-2 mb-lg-0 gap-0 gap-xl-3 ps-xl-5">
+              <li class="nav-item mb-lg-0 mb-3 mt-md-0 mt-3 ps-xl-4">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item  mb-lg-0 mb-3">
+                <a class="nav-link" href="shop.html">SHOP</a>
+              </li>
+              <li class="nav-item  mb-lg-0 mb-3">
+                <a class="nav-link" href="shipping-information.html">SHIPPING INFORMATION</a>
+              </li>
+              <li class="nav-item  mb-lg-0 mb-3">
+                <a class="nav-link" href="dashboard.html">DASHBOARD</a>
+              </li>
+              <li class="nav-item  mb-lg-0 mb-2">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+              </li>
+              <li class="nav-item  mb-lg-0 mb-2">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <!-- search button and cart button -->
+          <div class="nav-buttons position-absolute">
+            <button class="btn rounded-circle search-btn me-md-3 me-2 " type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <img src="../IMAGES/search.png" class="w-100 pb-1" alt="">
+            </button>
+  
+            <button class="btn cart-btn align-items-center rounded-pill pt-2 px-sm-4 px-3 me-md-4" id="liveToastBtn">
+              <img src="../IMAGES/shopping-bag.png" class="" alt="">
+              <span class="d-none d-md-inline">CART</span> 3
+            </button>
+          </div>
+      </nav>
+    </div>
+
+  <!-- on click of search button -->
+    <div class="search" data-bs-scroll="true">
+      <div class="collapse " id="collapseExample">
+        <div class="card card-body rounded-0 d-flex">
+          <div class="row justify-content-between">
+            <div class="col-md-11 col-10">
+              <input class="form-control me-2 bg-transparent border-0 text-white" type="search"
+                placeholder="Enter Keywords..." aria-label="Search">
+            </div>
+  
+            <div class="col-md-1 col-2 text-center">
+              <a class="btn" href="#">
+                <i class="fa-solid fa-magnifying-glass text-white "></i>
+              </a>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+  <!-- on click of cart button -->
+  <div class=" cart-btn-popup p-sm-3 p-1" style="z-index: 11" data-bs-scroll="true">
+    <div id="liveToast" class="toast rounded-0 shadow-sm border-0 bg-white" role="alert" aria-live="assertive"
+      aria-atomic="true">
+      <div class="toast-header border-0 position-relative">
+        <button type="button" class="btn-close position-absolute shadow-none end-0 top-0 mt-4 me-4" data-bs-dismiss="toast"
+          aria-label="Close"><span class="material-symbols-outlined fw-light">
+            close
+            </span></button>
+      </div>
+      <div class="toast-body px-5 pb-3 pt-4">
+        <h4 class="fs-5 mb-3">Your Cart</h4>
+        <div class="card mb-3 border-0 border-bottom pb-3 alert alert-dismissible p-0">
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            <span class="material-symbols-outlined fw-light"> close</span>
+          </button>
+          <div class="row g-0">
+            <div class="col-4">
+              <img src="../IMAGES/product-1.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body p-0">
+                <h6 class="card-title">Eleven Paris Skinny Jeans</h6>
+                <p class="card-text fs-6">1 X $79.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 border-0 border-bottom pb-3 alert alert-dismissible">
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            <span class="material-symbols-outlined fw-light"> close</span>
+          </button>
+          <div class="row g-0">
+            <div class="col-4">
+              <img src="../IMAGES/product-2.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body p-0">
+                <h6 class="card-title">Eleven Paris Skinny Jeans</h6>
+                <p class="card-text fs-6">1 X $79.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-total d-flex justify-content-between">
+          <span class="fs-6 ">Cart Total</span> <span class="fs-6">$79.00</span>
+        </div>
+        <div class="toast-buttons d-flex justify-content-between pt-4">
+          <a href=""><button class="btn btn-lg text-white rounded-0 fs-6 toast-btn">VIEW CART</button></a>
+          <a href="shipping-information.html"><button class="btn btn-lg text-white rounded-0 fs-6 toast-btn">CHECK
+              OUT</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================================== -->
+  <!-- -------------------------------------- BREADCRUMB ---------------------------------------- -->
+  <!-- ========================================================================================== -->
+
+  <section class="page-path ps-sm-5 ps-3 pt-1">
+    <nav aria-label="breadcrumb" class="pt-4 pb-3 ps-sm-5 ps-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html" class=" text-decoration-none text-dark">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+      </ol>
+    </nav>
+  </section>
+
+  <!-- ========================================================================================== -->
+  <!-- -------------------------------------- MAP SECTION --------------------------------------- -->
+  <!-- ========================================================================================== -->
+  <section class="map-section">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d117519.1238729729!2d72.5057536!3d23.0064128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1666412977556!5m2!1sen!2sin"
+      width="800" height="600" class="w-100" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- ========================================================================================== -->
+  <!-- ---------------------------------- CONTACT SECTION --------------------------------------- -->
+  <!-- ========================================================================================== -->
+  <section class="contact-section py-5">
+
+    <div class="container py-5">
+      <div class="row">
+        <!-- CONTACT SECTION LEFT SIDE -->
+        <div class="col-lg-7">
+          <h2 class="mb-4">Contact Us</h2>
+          <form class="row mb-4 text-center text-lg-start">
+            <div class="col-md-6">
+              <input type="text" placeholder="First Name" class="form-control w-100 ps-4 mb-4 rounded-0">
+            </div>
+            <div class="col-md-6">
+              <input type="text" placeholder="Last Name" class="form-control w-100 ps-4 mb-4 rounded-0">
+            </div>
+            <div class="col-12">
+              <input type="text" placeholder="Subject" class="form-control w-100 ps-4 mb-4 rounded-0">
+            </div>
+            <div class="col-12 ">
+              <textarea name="" id="" cols="30" rows="5" class=" form-control ps-4 mb-4 rounded-0"
+                placeholder="Message"></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-lg submit-btn text-white rounded-pill py-3">SUBMIT NOW</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- CONTACT SECTION RIGHT SIDE -->
+        <div class="col-lg-5">
+          <div class="contact">
+            <div class=" px-lg-5 mx-lg-4 py-4">
+              <!-- LOCATION -->
+              <div class="row mb-5">
+                <div class="col-2">
+                  <img src="../IMAGES/pin.png" alt="" class="" style="width: 35px ;">
+                </div>
+                <div class="col-md-10 col-9">
+                  <h4>Our Location</h4>
+                  <p class="text-muted">211 Michael Extension, Lake Christopher, UD03 5WX</p>
+                </div>
+              </div>
+
+              <!-- PHONE NUMBER -->
+              <div class="row mb-5">
+                <div class="col-2">
+                  <img src="../IMAGES/iphone.png" alt="" class="" style="width: 40px ;">
+                </div>
+                <div class="col-md-10 col-9">
+                  <h4>Call Us Now</h4>
+                  <p class="text-muted m-0">(+18) 0117 022 7728</p>
+                  <p class="text-muted">(+18) 0117 022 7729</p>
+                </div>
+              </div>
+
+              <!-- EMAIL -->
+              <div class="row">
+                <div class="col-2">
+                  <img src="../IMAGES/mail.png" alt="" class="" style="width: 44px ;">
+                </div>
+                <div class="col-md-10 col-9">
+                  <h4>Write Us Now</h4>
+                  <p class="text-muted">customer.service@example.com info@example.com</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- ========================================================================================== -->
+  <!-- ----------------------------------- FOOTER SECTION --------------------------------------- -->
+  <!-- ========================================================================================== -->
+  <section class="footer-section">
+    <div class="container py-5 text-center text-sm-start">
+      <div class="row  pt-5">
+        <!-- COLUMN 1 -->
+        <div class="col-md-3 col-sm-6 pb-5">
+          <h5 class="mb-4">Contact</h5>
+          <p>20464 Hirthe Curve Suite, Emardton, CT 12471-4107</p>
+          <p>+5(305) 785-0437</p>
+          <p>info@example.com</p>
+          <ul class=" list-inline socials py-2">
+            <li class=" list-inline-item">
+              <a href="" class="text-white rounded-circle facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+
+            <li class=" list-inline-item">
+              <a href="" class="text-white rounded-circle twitter"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+
+            <li class=" list-inline-item">
+              <a href="" class="text-white rounded-circle vimeo "><i class="fa-brands fa-vimeo-v "></i></a>
+
+            </li>
+
+            <li class=" list-inline-item">
+              <a href="" class="text-white rounded-circle gplus"><i class="fa-brands fa-google-plus-g"></i></a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="col-md-3 col-sm-6 column-link pb-5">
+          <h5 class="mb-4">Category</h5>
+          <p><a href="shop.html" class=" text-decoration-none">Men</a></p>
+          <p><a href="shop.html" class=" text-decoration-none">Women</a></p>
+          <p><a href="shop.html" class=" text-decoration-none">Kids</a></p>
+          <p><a href="shop.html" class=" text-decoration-none">Accessories</a></p>
+          <p><a href="" class=" text-decoration-none">Shoe</a></p>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="col-md-3 col-sm-6 column-link pb-5">
+          <h5 class="mb-4">Useful Link</h5>
+          <p><a href="" class=" text-decoration-none">News and Tips</a></p>
+          <p><a href="" class=" text-decoration-none">About Us</a></p>
+          <p><a href="" class=" text-decoration-none">Support</a></p>
+          <p><a href="shop.html" class=" text-decoration-none">Our Shop</a></p>
+          <p><a href="contact.html" class=" text-decoration-none">Contact Us</a></p>
+        </div>
+
+        <!-- COLUMN 4 -->
+        <div class="col-md-3 col-sm-6 column-link">
+          <h5 class="mb-4">Our Policies</h5>
+          <p><a href="" class=" text-decoration-none">Privacy Policy</a></p>
+          <p><a href="" class=" text-decoration-none">Terms and Conditions</a></p>
+          <p><a href="" class=" text-decoration-none">Cookie Policy</a></p>
+          <p><a href="" class=" text-decoration-none">Term of Sale</a></p>
+          <p><a href="" class=" text-decoration-none">Free Shipping & Returns</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footend -->
+    <div class="foot-end d-md-flex d-block justify-content-between text-center py-4 px-5 align-items-center ">
+      <p class="ms-lg-4 mb-0 text-white">Logo © 2018 all right reserved</p>
+      <img src="../IMAGES/logo-alt.png" class="img-fluid my-md-0 my-4" alt="">
+      <div class="credit-cards me-lg-4 m-0">
+        <img src="../IMAGES/card-1.jpg" class="me-2 rounded-3" alt="" style="max-width: 40px;">
+        <img src="../IMAGES/card-2.jpg" class="me-2 rounded-3" alt="" style="max-width: 40px;">
+        <img src="../IMAGES/card-3.jpg" class="me-2 rounded-3" alt="" style="max-width: 40px;">
+        <img src="../IMAGES/card-4.jpg" class="rounded-3" alt="" style="max-width: 40px;">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="../bootstrap/js/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <script>
+    /* NAVBAR - CART BUTTON JAVASCRIPT */
+    var toastTrigger = document.getElementById('liveToastBtn')
+    var toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+      toastTrigger.addEventListener('click', function () {
+        var toast = new bootstrap.Toast(toastLiveExample)
+
+        toast.show()
+      })
+    }
+  </script>
+</body>
+
+</html>

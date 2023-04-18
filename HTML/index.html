@@ -1,0 +1,2576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://kit.fontawesome.com/08c834e524.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../CSS/index.css">
+</head>
+
+<body>
+  <!-- ========================================================================================== -->
+  <!-- ---------------------------------------- HEADER ------------------------------------------ -->
+  <!-- ========================================================================================== -->
+  <header class="bg-dark ps-3 pe-5"> 
+    <div class="d-lg-flex px-4 py-2 header-top align-items-center justify-content-between text-center">
+      <span class="small text-white">Free shipping • Free 30 days return • Express delivery</span>
+      <ul class=" list-unstyled m-0">
+        <li class=" list-inline-item border-end border-secondary pe-3"> <img src="../IMAGES/flag.jpg" alt=""></li>
+        <li class=" list-inline-item  border-end border-secondary pe-3"> <a href="" class=" text-decoration-none small text-white"> My Accounts</a></li>
+        <li class=" list-inline-item">
+          <form action="">
+            <select class=" bg-transparent small text-white gy-5 border-0" name="country" id="">
+              <option class="bg-dark small" value="USD" > USD</option>
+              <option class="bg-dark small" value="JPN">JPN</option>
+              <option class="bg-dark small" value="BAN">BAN</option>
+            </select>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- ========================================================================================== -->
+  <!-- ---------------------------------------- NAVBAR ------------------------------------------ -->
+  <!-- ========================================================================================== -->
+
+  <!-- navbar -->
+    <div class=" sticky-lg-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 shadow-sm position-relative sticky-lg-top">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand mx-auto ps-md-3" href="index.html">
+            <img src="../IMAGES/logo-img.png" alt="">
+          </a>
+          <button class="navbar-toggler position-absolute border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav text-center  mb-2 mb-lg-0 gap-0 gap-xl-3 ps-xl-5">
+              <li class="nav-item mb-lg-0 mb-3 mt-md-0 mt-3 ps-xl-4">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item  mb-lg-0 mb-3">
+                <a class="nav-link" href="shop.html">SHOP</a>
+              </li>
+              <li class="nav-item  mb-lg-0 mb-3">
+                <a class="nav-link" href="shipping-information.html">SHIPPING INFORMATION</a>
+              </li>
+              <li class="nav-item  mb-lg-0 mb-3">
+                <a class="nav-link" href="dashboard.html">DASHBOARD</a>
+              </li>
+              <li class="nav-item  mb-lg-0 mb-2">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+              </li>
+              <li class="nav-item  mb-lg-0 mb-2">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <!-- search button and cart button -->
+          <div class="nav-buttons position-absolute">
+            <button class="btn rounded-circle search-btn me-md-3 me-2 " type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <img src="../IMAGES/search.png" class="w-100 pb-1" alt="">
+            </button>
+  
+            <button class="btn cart-btn align-items-center rounded-pill pt-2 px-sm-4 px-3 me-md-4" id="liveToastBtn">
+              <img src="../IMAGES/shopping-bag.png" class="" alt="">
+              <span class="d-none d-md-inline">CART</span> 3
+            </button>
+          </div>
+      </nav>
+    </div>
+
+  <!-- on click of search button -->
+    <div class="search" data-bs-scroll="true">
+      <div class="collapse " id="collapseExample">
+        <div class="card card-body rounded-0 d-flex">
+          <div class="row justify-content-between">
+            <div class="col-md-11 col-10">
+              <input class="form-control me-2 bg-transparent border-0 text-white" type="search"
+                placeholder="Enter Keywords..." aria-label="Search">
+            </div>
+  
+            <div class="col-md-1 col-2 text-center">
+              <a class="btn" href="#">
+                <i class="fa-solid fa-magnifying-glass text-white "></i>
+              </a>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+  <!-- on click of cart button -->
+  <div class=" cart-btn-popup p-sm-3 p-1" style="z-index: 11" data-bs-scroll="true">
+    <div id="liveToast" class="toast rounded-0 shadow-sm border-0 bg-white" role="alert" aria-live="assertive"
+      aria-atomic="true">
+      <div class="toast-header border-0 position-relative">
+        <button type="button" class="btn-close position-absolute shadow-none end-0 top-0 mt-4 me-4" data-bs-dismiss="toast"
+          aria-label="Close"><span class="material-symbols-outlined fw-light">
+            close
+            </span></button>
+      </div>
+      <div class="toast-body px-5 pb-3 pt-4">
+        <h4 class="fs-5 mb-3">Your Cart</h4>
+        <div class="card mb-3 border-0 border-bottom pb-3 alert alert-dismissible p-0">
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            <span class="material-symbols-outlined fw-light"> close</span>
+          </button>
+          <div class="row g-0">
+            <div class="col-4">
+              <img src="../IMAGES/product-1.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body p-0">
+                <h6 class="card-title">Eleven Paris Skinny Jeans</h6>
+                <p class="card-text fs-6">1 X $79.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 border-0 border-bottom pb-3 alert alert-dismissible">
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            <span class="material-symbols-outlined fw-light"> close</span>
+          </button>
+          <div class="row g-0">
+            <div class="col-4">
+              <img src="../IMAGES/product-2.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body p-0">
+                <h6 class="card-title">Eleven Paris Skinny Jeans</h6>
+                <p class="card-text fs-6">1 X $79.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-total d-flex justify-content-between">
+          <span class="fs-6 ">Cart Total</span> <span class="fs-6">$79.00</span>
+        </div>
+        <div class="toast-buttons d-flex justify-content-between pt-4">
+          <a href=""><button class="btn btn-lg text-white rounded-0 fs-6 toast-btn">VIEW CART</button></a>
+          <a href="shipping-information.html"><button class="btn btn-lg text-white rounded-0 fs-6 toast-btn">CHECK
+              OUT</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================================== -->
+  <!-- ------------------------------------ SLIDER SECTION -------------------------------------- -->
+  <!-- ========================================================================================== -->
+  <section class="slider-section">
+    <div id="slide-product" class="carousel carousel-dark slide p-4" data-bs-ride="carousel" data-bs-touch="true">
+
+      <div class="carousel-inner">
+        <!-- CAROUSEL ITEM 1 -->
+        <div class="carousel-item active pt-5 px-4">
+          <div class="row">
+            <div class="col-lg-6 pt-5 mt-lg-5 mt-0">
+              <!-- carousel left content -->
+              <div class="slider-left ps-md-5 ps-0 ms-md-3 ms-0 text-center text-md-start">
+                <h3>For Women's</h3>
+                <h1>High Quality Bag</h1>
+                <h3>for only $37.00</h3>
+                <p class="pb-2 pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+                <a href="shop.html">
+                  <button class="btn btn-lg shop-btn text-white rounded-pill py-3 px-5">SHOP NOW</button>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center position-relative">
+              <!-- carousel right image -->
+              <div class="slider-right h-100 pt-3 pt-md-0">
+                <img src="../IMAGES/bag.png" class="img-fluid" alt="">
+                <span class="text-white position-absolute span-b">B</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CAROUSEL ITEM 2 -->
+        <div class="carousel-item pt-5 px-4">
+          <div class="row">
+            <div class="col-lg-6 pt-5 mt-lg-5 mt-0">
+              <!-- carousel left content -->
+              <div class="slider-left ps-lg-5 ps-0 text-center text-md-start">
+                <h3>For Men's</h3>
+                <h1>High Quality Converse</h1>
+                <h3>for only $37.00</h3>
+                <p class="pb-2 pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="shop.html">
+                    <button class="btn btn-lg shop-btn text-white rounded-pill py-3 px-5">SHOP NOW</button>
+                  </a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 d-flex position-relative">
+
+              <!-- carousel right image -->
+              <div class="slider-right h-100 pt-3 pt-md-0">
+                <img src="../IMAGES/converse.png" class="img-fluid converse-img" alt="">
+                <span class="text-white position-absolute span-c">C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- CAROUSEL ARROW BUTTONS -->
+      <button class="carousel-control-prev opacity-100 arrow-btn" type="button" data-bs-target="#slide-product"
+        data-bs-slide="prev">
+        <div class="arrow-circle bg-white rounded-circle p-2 position-relative">
+          <img src="../IMAGES/left-arrow-in.png" class="img-in pt-2" alt="">
+          <img src="../IMAGES/left-arrow-out.png" class="img-fluid position-absolute img-out-left" alt="">
+        </div>
+      </button>
+      <button class="carousel-control-next opacity-100 arrow-btn" type="button" data-bs-target="#slide-product"
+        data-bs-slide="next">
+        <div class="arrow-circle bg-white rounded-circle p-2 position-relative">
+          <img src="../IMAGES/right-arrow-in.png" class="img-in pt-2" alt="">
+          <img src="../IMAGES/right-arrow-out.png" class="img-fluid position-absolute img-out-right" alt="">
+        </div>
+      </button>
+    </div>
+  </section>
+
+  <!-- ========================================================================================== -->
+  <!-- --------------------------------- CATEGORIES SECTION ------------------------------------- -->
+  <!-- ========================================================================================== -->
+  <section class="categories-section py-5 mb-5">
+
+    <h2 class="text-center pt-5 pb-3">Top Categories</h2>
+
+    <div class="container mb-5">
+
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 ">
+          <div class="card overflow-hidden">
+            <a href="" class=" border-0 overflow-hidden align-self-center">
+              <img src="../IMAGES/product-big-1.jpg" alt="" class="img-fluid">
+            </a>
+            <div class="row">
+              <div class="col-4 border-end overflow-hidden border-top">
+                <a href="">
+                  <img src="../IMAGES/product-sm-1.jpg" class=" img-fluid" alt="">
+                </a>
+              </div>
+              <div class="col-4 border-end overflow-hidden border-top">
+                <a href="" class="">
+                  <img src="../IMAGES/product-sm-2.jpg" class=" img-fluid" alt="">
+                </a>
+              </div>
+              <div class="col-4 overflow-hidden border-top">
+                <a href="" class="">
+                  <img src="../IMAGES/product-sm-3.jpg" class="img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="cat-name-btn border-top d-flex justify-content-between p-3">
+              <span class="fs-5">Clothing</span>
+              <a href="shop.html"><button class="btn rounded-pill px-3 text-muted">VIEW MORE</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-5 mt-md-0 ">
+          <div class="card overflow-hidden">
+            <a href="" class=" border-0 overflow-hidden align-self-center">
+              <img src="../IMAGES/product-big-2.jpg" alt="" class="img-fluid">
+            </a>
+            <div class="row">
+              <div class="col-4 border-end overflow-hidden border-top">
+                <a href="">
+                  <img src="../IMAGES/product-sm-4.jpg" class=" img-fluid" alt="">
+                </a>
+              </div>
+              <div class="col-4 border-end overflow-hidden border-top">
+                <a href="" class="">
+                  <img src="../IMAGES/product-sm-5.jpg" class=" img-fluid" alt="">
+                </a>
+              </div>
+              <div class="col-4 overflow-hidden border-top">
+                <a href="" class="">
+                  <img src="../IMAGES/product-sm-6.jpg" class="img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="cat-name-btn border-top d-flex justify-content-between p-3">
+              <span class="fs-5">Shoes</span>
+              <a href="shop.html"><button class="btn rounded-pill px-3 text-muted">VIEW MORE</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+          <div class="card overflow-hidden ">
+            <a href="" class=" border-0 overflow-hidden align-self-center">
+              <img src="../IMAGES/product-big-3.jpg" alt="" class="img-fluid">
+            </a>
+            <div class="row">
+              <div class="col-4 border-end overflow-hidden border-top">
+                <a href="">
+                  <img src="../IMAGES/product-sm-7.jpg" class=" img-fluid" alt="">
+                </a>
+              </div>
+              <div class="col-4 border-end overflow-hidden border-top">
+                <a href="" class="">
+                  <img src="../IMAGES/product-sm-8.jpg" class=" img-fluid" alt="">
+                </a>
+              </div>
+              <div class="col-4 overflow-hidden border-top">
+                <a href="" class="">
+                  <img src="../IMAGES/product-sm-9.jpg" class="img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="cat-name-btn border-top d-flex justify-content-between p-3">
+              <span class="fs-5">Accessories</span>
+              <a href="shop.html"><button class="btn rounded-pill px-3 text-muted">VIEW MORE</button></a>
+            </div>
+          </div>
+        </div>
+
+  </section>
+
+
+  <!-- ========================================================================================== -->
+  <!-- ------------------------------------- SEASON SECTION ------------------------------------- -->
+  <!-- ========================================================================================== -->
+
+  <section class="season-section text-white p-md-5 py-5 px-2">
+    <div class="season-content text-center m-md-5 m-0">
+      <h1 class="text-white">End of Season Sale</h1>
+      <p class="text-white">Take 25% off all sweaters and knits. Discount applied at checkout.</p>
+      <a href="shop.html"> 
+        <button class="btn btn-lg shop-btn text-white rounded-pill py-3 px-5">SHOP NOW</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========================================================================================== -->
+  <!-- ----------------------------------- COLLECTION SECTION ----------------------------------- -->
+  <!-- ========================================================================================== -->
+
+
+  <section class="collection-section text-center p-md-5 py-5 px-2">
+    <h2 class="text-center pt-5 pb-3">Top Collections</h2>
+    <div class="container">
+
+      <!-- FOR LARGE SCREEN DISPLAY - four cards active with two indicator buttons -->
+      <div id="large-screen" class="carousel slide pb-5 d-lg-block d-none" data-bs-ride="carousel" data-bs-touch="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#large-screen" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#large-screen" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-3">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-2.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-5.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-3">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-3.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-6.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <span class="badge badge1 text-white position-absolute top-0 start-0 m-2">new</span>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-3">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-4.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-7.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-3">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-5.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-3.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <span class="badge badge2 text-white position-absolute top-0 start-0 m-2">-10%</span>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-3">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-6.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-4.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-3">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-7.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-2.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-3">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-8.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-4.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-3">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-9.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-6.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOR MEDIUM SCREEN DISPLAY - Three cards active with three indicator buttons -->
+      <div id="medium-screen" class="carousel slide pb-5 d-md-block d-lg-none d-none" data-bs-ride="carousel"
+        data-bs-touch="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#medium-screen" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#medium-screen" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#medium-screen" data-bs-slide-to="2"></button>
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-4">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-2.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-5.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-3.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-6.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <span class="badge badge1 text-white position-absolute top-0 start-0 m-2">new</span>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-4.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-7.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-4">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-5.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-3.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <span class="badge badge2 text-white position-absolute top-0 start-0 m-2">-10%</span>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-6.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-4.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-7.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-2.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-4">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-7.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-2.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-8.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-4.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-9.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-6.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOR SMALL SCREEN DISPLAY - Two cards active with four indicator buttons -->
+      <div id="small-screen" class="carousel slide pb-5 d-sm-block d-lg-none d-md-none d-none" data-bs-ride="carousel"
+        data-bs-touch="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#small-screen" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#small-screen" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#small-screen" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#small-screen" data-bs-slide-to="3"></button>
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-6">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-2.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-5.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-3.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-6.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <span class="badge badge1 text-white position-absolute top-0 start-0 m-2">new</span>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-6">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-4.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-7.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-5.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-3.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <span class="badge badge2 text-white position-absolute top-0 start-0 m-2">-10%</span>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-6">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-6.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-4.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-7.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-2.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-6">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-8.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-4.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-9.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-6.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOR MOBILE SCREEN DISPLAY - Two cards active with four indicator buttons -->
+      <div id="mobile-screen" class="carousel slide pb-5 d-sm-none" data-bs-ride="carousel" data-bs-touch="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mobile-screen" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#mobile-screen" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#mobile-screen" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#mobile-screen" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#mobile-screen" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#mobile-screen" data-bs-slide-to="5"></button>
+          <button type="button" data-bs-target="#mobile-screen" data-bs-slide-to="6"></button>
+          <button type="button" data-bs-target="#mobile-screen" data-bs-slide-to="7"></button>
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-12">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-2.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-5.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-3.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-6.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <span class="badge badge1 text-white position-absolute top-0 start-0 m-2">new</span>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-4.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-7.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <button class="btn bg-white mb-2"><span class="material-symbols-outlined">favorite</span></button>
+                    <br>
+                    <button class="btn bg-white mb-2"><span class="material-symbols-outlined">
+                        compare_arrows</span></button>
+                    <br>
+                    <button class="btn bg-white">
+                      <span class="material-symbols-outlined">search</span></button>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-5.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-3.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <span class="badge badge2 text-white position-absolute top-0 start-0 m-2">-10%</span>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-6.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-4.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-7.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-2.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-8.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-4.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12">
+                <div class="season-card position-relative ">
+                  <div class="collection-img overflow-hidden position-relative">
+                    <div class="collection-img1">
+                      <a href="">
+                        <img src="../IMAGES/collection-9.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                    <div class="collection-img2 position-absolute top-0">
+                      <a href="">
+                        <img src="../IMAGES/collection-6.jpg" class="img-fluid" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="overlay-buttons p-2  position-absolute top-0 end-0">
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Wishlist">
+                        <span class="material-symbols-outlined">favorite</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="">
+                      <button class="btn bg-white mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Compare">
+                        <span class="material-symbols-outlined">compare_arrows</span>
+                      </button>
+                      <br>
+                    </a>
+                    <a href="#quick-view" data-bs-toggle="modal">
+                      <button class="btn bg-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                        <span class="material-symbols-outlined">search</span>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="overlay position-absolute bottom-0 text-center w-100 py-3">
+                    <a class="btn text-white collection-btn rounded-pill px-4">ADD TO CART</a>
+                  </div>
+
+                  <div class="collection-info py-3">
+                    <a href="" class=" text-decoration-none">Puzzle leather shoulder bag</a>
+                    <p>$400.79</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="quick-view" tabindex="-1">
+      <div class="modal-dialog mx-auto">
+        <div class="modal-content border-0 rounded-0">
+
+
+          <div class="modal-body p-0 ">
+            <div class="row p-lg-0 p-4">
+              <!-- modal left- image -->
+              <div class="col-md-6">
+                <img src="../IMAGES/collection-1.png" class="img-fluid h-100" alt="">
+              </div>
+
+              <!-- modal right- form -->
+              <div class="col-md-6 text-md-start px-lg-5 py-4 modal-rightside text-sm-center">
+                <h3>Woven Crop Cami</h3>
+                <span class="fs-6">$90.00</span>
+                <p class="text-muted pe-md-5">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum. sed ut perspic atis unde omnis iste natus</p>
+
+                <!-- Drop Down 1 -->
+                <div class="btn-group pt-2">
+                  <button type="button" class="btn ps-4 rounded-pill d-flex justify-content-between align-items-center"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>Brown Color </span> <i class="fa-solid fa-chevron-down text-muted"></i>
+                  </button>
+                  <ul class="dropdown-menu w-100 p-0">
+                    <li><a class="dropdown-item fw-bold text-muted" href="#">Brown Color</a></li>
+                    <li><a class="dropdown-item text-muted" href="#">Gray Color</a></li>
+                    <li><a class="dropdown-item text-muted" href="#">Black Color</a></li>
+                  </ul>
+                </div>
+              
+
+                <!-- Drop Down 2 -->
+                <div class="btn-group pt-2 pb-2">
+                  <button type="button" class="btn ps-4 rounded-pill d-flex justify-content-between align-items-center"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>Small Size</span> <i class="fa-solid fa-chevron-down text-muted"></i>
+                  </button>
+                  <ul class="dropdown-menu w-100 p-0">
+                    <li><a class="dropdown-item fw-bold text-muted" href="#">Small Size</a></li>
+                    <li><a class="dropdown-item text-muted" href="#">Medium Size</a></li>
+                    <li><a class="dropdown-item text-muted" href="#">Large Size</a></li>
+                  </ul>
+                </div>
+
+                <!-- modal button -->
+                <a href="">
+                  <button class="btn text-white rounded-pill modal-btn mt-2">ADD TO CART</button>
+                </a>
+
+                <!-- modal socials -->
+                <div class="modal-socials ms-2 mt-5">
+                  <a href="" class="text-decoration-none"><i class="fa-brands fa-facebook-f fs-6"></i></a>
+                  <a href="" class="text-decoration-none"><i class="fa-brands fa-twitter fs-6"></i></a>
+                  <a href="" class="text-decoration-none"><i class="fa-brands fa-vimeo-v fs-6"></i></a>
+                  <a href="" class="text-decoration-none"><i class="fa-brands fa-google-plus-g fs-6"></i></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal dismiss button -->
+      <button type="button" class="position-absolute end-0 top-0 bg-dark border-0 py-1 px-3 opacity-75"
+        data-bs-dismiss="modal">
+        <span class="material-symbols-outlined fw-light text-white fs-5 mt-2"> close</span>
+      </button>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================================== -->
+  <!-- --------------------------------------- DEAL SECTION ------------------------------------- -->
+  <!-- ========================================================================================== -->
+
+  <section class="deal-section py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <div class="deal-content">
+            <h1 class="">Deal of the day</h1>
+            <h4 class="fs-5">Get at discounted price!</h4>
+            <p class="">The countdown is finished!</p>
+            <a href="shop.html">
+              <button class="btn btn-lg shop-btn text-white rounded-pill py-3 px-5">SHOP NOW</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-md-0 mt-5 deal-img position-relative">
+          <!-- <div class=""> -->
+          <img src="../IMAGES/deal.png" alt="" class="img-fluid">
+          <span class="span-o position-absolute fw-bold text-white">O</span>
+          <!-- </div> -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================================== -->
+  <!-- ------------------------------------- FOLLOW SECTION ------------------------------------- -->
+  <!-- ========================================================================================== -->
+
+  <section class="follow-section text-center py-5" style="z-index:2;">
+    <h2 style="z-index:2;">Follow Us On Instagram</h2>
+    <p class="small">@ Occaecat Cupidatat</p>
+
+    <div class="container-fluid py-5">
+      <div class="row gy-4">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="follow-img position-relative">
+            <img src="../IMAGES/item-1.png" class="img-fluid" alt="">
+
+            <div class="follow-overlay position-absolute top-0 h-100 w-100">
+              <div class="follow-buttons d-flex">
+                <a href="" class=" d-flex align-baseline me-2 text-decoration-none follow-btn">
+                  <span class="material-symbols-outlined fs-5">favorite </span> <span class="ms-1">40</span>
+                </a>
+
+                <a href="" class=" d-flex align-baseline text-decoration-none follow-btn">
+                  <span class="material-symbols-outlined">forum </span> <span class="ms-2"> 24</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="follow-img position-relative">
+            <img src="../IMAGES/item-2.png" class="img-fluid" alt="">
+
+            <div class="follow-overlay position-absolute top-0 h-100 w-100">
+              <div class="follow-buttons d-flex">
+                <a href="" class=" d-flex align-baseline me-2 text-decoration-none follow-btn">
+                  <span class="material-symbols-outlined fs-5">favorite </span> <span class="ms-1">40</span>
+                </a>
+
+                <a href="" class=" d-flex align-baseline text-decoration-none follow-btn">
+                  <span class="material-symbols-outlined">forum </span> <span class="ms-2"> 24</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="follow-img position-relative">
+            <img src="../IMAGES/item-3.png" class="img-fluid" alt="">
+
+            <div class="follow-overlay position-absolute top-0 h-100 w-100">
+              <div class="follow-buttons d-flex">
+                <a href="" class=" d-flex align-baseline me-2 text-decoration-none follow-btn">
+                  <span class="material-symbols-outlined fs-5">favorite </span> <span class="ms-1">40</span>
+                </a>
+
+                <a href="" class=" d-flex align-baseline text-decoration-none follow-btn">
+                  <span class="material-symbols-outlined">forum </span> <span class="ms-2"> 24</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="follow-img position-relative">
+            <img src="../IMAGES/item-4.png" class="img-fluid" alt="">
+
+            <div class="follow-overlay position-absolute top-0 h-100 w-100">
+              <div class="follow-buttons d-flex">
+                <a href="" class=" d-flex align-baseline me-2 text-decoration-none follow-btn">
+                  <span class="material-symbols-outlined fs-5">favorite </span> <span class="ms-1">40</span>
+                </a>
+
+                <a href="" class=" d-flex align-baseline text-decoration-none follow-btn">
+                  <span class="material-symbols-outlined">forum </span> <span class="ms-2"> 24</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="follow-img position-relative">
+            <img src="../IMAGES/item-5.png" class="img-fluid" alt="">
+
+            <div class="follow-overlay position-absolute top-0 h-100 w-100">
+              <div class="follow-buttons d-flex">
+                <a href="" class=" d-flex align-baseline me-2 text-decoration-none follow-btn">
+                  <span class="material-symbols-outlined fs-5">favorite </span> <span class="ms-1">40</span>
+                </a>
+
+                <a href="" class=" d-flex align-baseline text-decoration-none follow-btn">
+                  <span class="material-symbols-outlined">forum </span> <span class="ms-2"> 24</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="follow-img position-relative">
+            <img src="../IMAGES/item-6.png" class="img-fluid" alt="">
+
+            <div class="follow-overlay position-absolute top-0 h-100 w-100">
+              <div class="follow-buttons d-flex">
+                <a href="" class=" d-flex align-baseline me-2 text-decoration-none follow-btn">
+                  <span class="material-symbols-outlined fs-5">favorite </span> <span class="ms-1">40</span>
+                </a>
+
+                <a href="" class=" d-flex align-baseline text-decoration-none follow-btn">
+                  <span class="material-symbols-outlined">forum </span> <span class="ms-2"> 24</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ========================================================================================== -->
+  <!-- ------------------------------------- POLICY SECTION ------------------------------------- -->
+  <!-- ========================================================================================== -->
+
+
+  <section class="policy-section border-top py-5">
+    <div class="container">
+      <div class="row gy-3 text-center text-sm-start">
+        <div class="col-lg-3 col-sm-6">
+          <div class="row">
+            <div class="col-sm-3">
+              <span class="material-symbols-outlined">local_shipping</span>
+            </div>
+
+            <div class="col-sm-9">
+              <h4 class="fs-5">Free Shipping</h4>
+              <p class="text-muted">Free shipping on order over $70</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="row">
+            <div class="col-sm-3">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <div class="col-sm-9">
+              <h4 class="fs-5">Secure Payment</h4>
+              <p class="text-muted">We ensure secure payment with PEV</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="row">
+            <div class="col-sm-3">
+              <span class="material-symbols-outlined">timer</span>
+            </div>
+
+            <div class="col-sm-9">
+              <h4 class="fs-5">Support 24/7</h4>
+              <p class="text-muted">Contact us 24 hours a day, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="row">
+            <div class="col-sm-3">
+              <span class="material-symbols-outlined">sync</span>
+            </div>
+
+            <div class="col-sm-9">
+              <h4 class="fs-5">30 Days Return</h4>
+              <p class="text-muted">Simply return it within 30 days for an exchange.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================================== -->
+  <!-- ----------------------------------- NEWSLETTER SECTION ----------------------------------- -->
+  <!-- ========================================================================================== -->
+
+  <section class="newsletter-section text-center py-5 px-sm-0 px-5">
+    <h2 class="pt-5 pb-3">Our Newsletter</h2>
+    <p>Subscribe to our Newsletter to receive early discount offers</p>
+
+    <form action="" class="pt-2 pb-5 w-100 mx-auto">
+      <div class="container">
+        <div class="row justify-content-center ">
+          <div class="col-sm-4"> 
+            <div class="mail-input">
+              <input type="email" name="" id="" class="border-0 py-3 ps-4 mb-4 w-100"
+              placeholder="Enter your email">
+            </div>
+  
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-3"> 
+             <button class="btn btn-lg shop-btn text-white rounded-pill py-3  w-100">SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+   
+
+    </form>
+  </section>
+
+  <!-- ========================================================================================== -->
+  <!-- ----------------------------------- FOOTER SECTION --------------------------------------- -->
+  <!-- ========================================================================================== -->
+  <section class="footer-section">
+    <div class="container py-5 text-center text-sm-start">
+      <div class="row  pt-5">
+        <!-- COLUMN 1 -->
+        <div class="col-md-3 col-sm-6 pb-5">
+          <h5 class="mb-4">Contact</h5>
+          <p>20464 Hirthe Curve Suite, Emardton, CT 12471-4107</p>
+          <p>+5(305) 785-0437</p>
+          <p>info@example.com</p>
+          <ul class=" list-inline socials py-2">
+            <li class=" list-inline-item">
+              <a href="" class="text-white rounded-circle facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+
+            <li class=" list-inline-item">
+              <a href="" class="text-white rounded-circle twitter"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+
+            <li class=" list-inline-item">
+              <a href="" class="text-white rounded-circle vimeo "><i class="fa-brands fa-vimeo-v "></i></a>
+
+            </li>
+
+            <li class=" list-inline-item">
+              <a href="" class="text-white rounded-circle gplus"><i class="fa-brands fa-google-plus-g"></i></a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="col-md-3 col-sm-6 column-link pb-5">
+          <h5 class="mb-4">Category</h5>
+          <p><a href="shop.html" class=" text-decoration-none">Men</a></p>
+          <p><a href="shop.html" class=" text-decoration-none">Women</a></p>
+          <p><a href="shop.html" class=" text-decoration-none">Kids</a></p>
+          <p><a href="shop.html" class=" text-decoration-none">Accessories</a></p>
+          <p><a href="" class=" text-decoration-none">Shoe</a></p>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="col-md-3 col-sm-6 column-link pb-5">
+          <h5 class="mb-4">Useful Link</h5>
+          <p><a href="" class=" text-decoration-none">News and Tips</a></p>
+          <p><a href="" class=" text-decoration-none">About Us</a></p>
+          <p><a href="" class=" text-decoration-none">Support</a></p>
+          <p><a href="shop.html" class=" text-decoration-none">Our Shop</a></p>
+          <p><a href="contact.html" class=" text-decoration-none">Contact Us</a></p>
+        </div>
+
+        <!-- COLUMN 4 -->
+        <div class="col-md-3 col-sm-6 column-link">
+          <h5 class="mb-4">Our Policies</h5>
+          <p><a href="" class=" text-decoration-none">Privacy Policy</a></p>
+          <p><a href="" class=" text-decoration-none">Terms and Conditions</a></p>
+          <p><a href="" class=" text-decoration-none">Cookie Policy</a></p>
+          <p><a href="" class=" text-decoration-none">Term of Sale</a></p>
+          <p><a href="" class=" text-decoration-none">Free Shipping & Returns</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footend -->
+    <div class="foot-end d-md-flex d-block justify-content-between text-center py-4 px-5 align-items-center ">
+      <p class="ms-lg-4 mb-0 text-white">Logo © 2018 all right reserved</p>
+      <img src="../IMAGES/logo-alt.png" class="img-fluid my-md-0 my-4" alt="">
+      <div class="credit-cards me-lg-4 m-0">
+        <img src="../IMAGES/card-1.jpg" class="me-2 rounded-3" alt="" style="max-width: 40px;">
+        <img src="../IMAGES/card-2.jpg" class="me-2 rounded-3" alt="" style="max-width: 40px;">
+        <img src="../IMAGES/card-3.jpg" class="me-2 rounded-3" alt="" style="max-width: 40px;">
+        <img src="../IMAGES/card-4.jpg" class="rounded-3" alt="" style="max-width: 40px;">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="../bootstrap/js/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <script>
+    /* NAVBAR - CART BUTTON JAVASCRIPT */
+    var toastTrigger = document.getElementById('liveToastBtn')
+    var toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+      toastTrigger.addEventListener('click', function () {
+        var toast = new bootstrap.Toast(toastLiveExample)
+
+        toast.show()
+      })
+    }
+
+    /* TOOL TIP ON COLLECTION SECTION OVERLAY BUTTONS */
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+
+</body>
+
+</html>

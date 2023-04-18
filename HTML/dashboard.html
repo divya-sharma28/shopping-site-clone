@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/08c834e524.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+</head>
+
+<body>
+
+  <!-- ========================================================================================== -->
+  <!-- ---------------------------------------- HEADER ------------------------------------------ -->
+  <!-- ========================================================================================== -->
+  <header class="bg-dark ps-3 pe-5"> 
+    <div class="d-lg-flex px-4 py-2 header-top align-items-center justify-content-between text-center">
+      <span class="small text-white">Free shipping • Free 30 days return • Express delivery</span>
+      <ul class=" list-unstyled m-0">
+        <li class=" list-inline-item border-end border-secondary pe-3"> <img src="../IMAGES/flag.jpg" alt=""></li>
+        <li class=" list-inline-item  border-end border-secondary pe-3"> <a href="" class=" text-decoration-none small text-white"> My Accounts</a></li>
+        <li class=" list-inline-item">
+          <form action="">
+            <select class=" bg-transparent small text-white gy-5 border-0" name="country" id="">
+              <option class="bg-dark small" value="USD" > USD</option>
+              <option class="bg-dark small" value="JPN">JPN</option>
+              <option class="bg-dark small" value="BAN">BAN</option>
+            </select>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- ========================================================================================== -->
+  <!-- ---------------------------------------- NAVBAR ------------------------------------------ -->
+  <!-- ========================================================================================== -->
+
+  <!-- navbar -->
+    <div class=" sticky-lg-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 shadow-sm position-relative sticky-lg-top">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand mx-auto ps-md-3" href="index.html">
+            <img src="../IMAGES/logo-img.png" alt="">
+          </a>
+          <button class="navbar-toggler position-absolute border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav text-center  mb-2 mb-lg-0 gap-0 gap-xl-3 ps-xl-5">
+              <li class="nav-item mb-lg-0 mb-3 mt-md-0 mt-3 ps-xl-4">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item  mb-lg-0 mb-3">
+                <a class="nav-link" href="shop.html">SHOP</a>
+              </li>
+              <li class="nav-item  mb-lg-0 mb-3">
+                <a class="nav-link" href="shipping-information.html">SHIPPING INFORMATION</a>
+              </li>
+              <li class="nav-item  mb-lg-0 mb-3">
+                <a class="nav-link" href="dashboard.html">DASHBOARD</a>
+              </li>
+              <li class="nav-item  mb-lg-0 mb-2">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+              </li>
+              <li class="nav-item  mb-lg-0 mb-2">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <!-- search button and cart button -->
+          <div class="nav-buttons position-absolute">
+            <button class="btn rounded-circle search-btn me-md-3 me-2 " type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <img src="../IMAGES/search.png" class="w-100 pb-1" alt="">
+            </button>
+  
+            <button class="btn cart-btn align-items-center rounded-pill pt-2 px-sm-4 px-3 me-md-4" id="liveToastBtn">
+              <img src="../IMAGES/shopping-bag.png" class="" alt="">
+              <span class="d-none d-md-inline">CART</span> 3
+            </button>
+          </div>
+      </nav>
+    </div>
+
+  <!-- on click of search button -->
+    <div class="search" data-bs-scroll="true">
+      <div class="collapse " id="collapseExample">
+        <div class="card card-body rounded-0 d-flex">
+          <div class="row justify-content-between">
+            <div class="col-md-11 col-10">
+              <input class="form-control me-2 bg-transparent border-0 text-white" type="search"
+                placeholder="Enter Keywords..." aria-label="Search">
+            </div>
+  
+            <div class="col-md-1 col-2 text-center">
+              <a class="btn" href="#">
+                <i class="fa-solid fa-magnifying-glass text-white "></i>
+              </a>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+  <!-- on click of cart button -->
+  <div class=" cart-btn-popup p-sm-3 p-1" style="z-index: 11" data-bs-scroll="true">
+    <div id="liveToast" class="toast rounded-0 shadow-sm border-0 bg-white" role="alert" aria-live="assertive"
+      aria-atomic="true">
+      <div class="toast-header border-0 position-relative">
+        <button type="button" class="btn-close position-absolute shadow-none end-0 top-0 mt-4 me-4" data-bs-dismiss="toast"
+          aria-label="Close"><span class="material-symbols-outlined fw-light">
+            close
+            </span></button>
+      </div>
+      <div class="toast-body px-5 pb-3 pt-4">
+        <h4 class="fs-5 mb-3">Your Cart</h4>
+        <div class="card mb-3 border-0 border-bottom pb-3 alert alert-dismissible p-0">
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            <span class="material-symbols-outlined fw-light"> close</span>
+          </button>
+          <div class="row g-0">
+            <div class="col-4">
+              <img src="../IMAGES/product-1.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body p-0">
+                <h6 class="card-title">Eleven Paris Skinny Jeans</h6>
+                <p class="card-text fs-6">1 X $79.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 border-0 border-bottom pb-3 alert alert-dismissible">
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            <span class="material-symbols-outlined fw-light"> close</span>
+          </button>
+          <div class="row g-0">
+            <div class="col-4">
+              <img src="../IMAGES/product-2.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body p-0">
+                <h6 class="card-title">Eleven Paris Skinny Jeans</h6>
+                <p class="card-text fs-6">1 X $79.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-total d-flex justify-content-between">
+          <span class="fs-6 ">Cart Total</span> <span class="fs-6">$79.00</span>
+        </div>
+        <div class="toast-buttons d-flex justify-content-between pt-4">
+          <a href=""><button class="btn btn-lg text-white rounded-0 fs-6 toast-btn">VIEW CART</button></a>
+          <a href="shipping-information.html"><button class="btn btn-lg text-white rounded-0 fs-6 toast-btn">CHECK
+              OUT</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- ========================================================================================== -->
+    <!-- -------------------------------------- BREADCRUMB ---------------------------------------- -->
+    <!-- ========================================================================================== -->
+
+    <section class="page-path ps-sm-5 ps-3 pt-1">
+        <nav aria-label="breadcrumb" class="pt-4 pb-3 ps-sm-5 ps-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" class=" text-decoration-none text-dark">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">My Accounts</li>
+            </ol>
+        </nav>
+    </section>
+
+    <!-- ========================================================================================== -->
+    <!-- -------------------------------------- DASHBOARD SECTION --------------------------------- -->
+    <!-- ========================================================================================== -->
+    <section class="dash-section my-5 ">
+
+        <ul class="nav nav-pills mb-3 justify-content-center gap-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border active" data-bs-toggle="pill" data-bs-target="#dashboard" type="button"
+                    role="tab">Dashboard</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border " data-bs-toggle="pill" data-bs-target="#orders" type="button"
+                    role="tab">Orders</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border " data-bs-toggle="pill" data-bs-target="#address" type="button"
+                    role="tab">Address</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border" data-bs-toggle="pill" data-bs-target="#details" type="button"
+                    role="tab">Profile Details</button>
+            </li>
+        </ul>
+        <div class="container mt-4">
+            <div class="tab-content border" id="pills-tabContent">
+                <!-- dashboard -->
+                <div class="tab-pane fade  show active p-4" id="dashboard" role="tabpanel">
+                    <div class="d-sm-flex justify-content-center text-sm-start text-center">
+                        <div>
+                            <img src="../IMAGES/avater.jpg" class=" rounded-circle" style="width:120px ;" alt="...">
+                        </div>
+                        <div>
+                            <div class="card-body">
+                                <h5 class="card-title">Welcome Adam Smith</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde,
+                                    iure, est. Sit mollitia est maxime! Eos cupiditate tempore, tempora omnis. Lorem
+                                    ipsum dolor sit amet, consectetur adipisicing elit. Enim, nihil.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="mt-4">Total Orders</h6>
+                    <div class="table-responsive">
+                        <table class="table table-borderless">
+                            <thead>
+                              <tr class="table-header">
+                                <th scope="col">Order ID</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Items</th>
+                                <th scope="col">Total Price</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td scope="row" class="border-bottom"><a href="" class=" text-decoration-none text-black">#252125</a></td>
+                                <td class="border-bottom">Mar 25, 2016</td>
+                                <td class="border-bottom">2</td>
+                                <td class="border-bottom">$ 99.00</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" class="border-bottom"><a href="" class=" text-decoration-none text-black">#252125</a></td>
+                                <td class="border-bottom">Mar 25, 2016</td>
+                                <td class="border-bottom">2</td>
+                                <td class="border-bottom">$ 99.00</td>
+                              </tr>
+                              <tr>
+                                <td scope="row"><a href="" class=" text-decoration-none text-black">#252125</a></td>
+                                <td>Mar 25, 2016</td>
+                                <td>2</td>
+                                <td>$ 99.00</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                  
+
+                </div>
+
+                <!-- Orders -->
+                <div class="tab-pane fade p-4" id="orders" role="tabpanel">
+                    <div class="table-responsive">
+                        <table class="table table-borderless">
+                            <thead>
+                              <tr class="table-header">
+                                <th scope="col">Order ID</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Items</th>
+                                <th scope="col">Total Price</th>
+                                <th scope="col">Status</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="border-bottom">
+                                <td scope="row"><a href="" class=" text-decoration-none text-black">#451231</a></td>
+                                <td >Mar 25, 2016</td>
+                                <td >2</td>
+                                <td >$ 99.00</td>
+                                <td><span class="badge bg-primary">Proceesing</span></td>
+                                <td> <button class="btn rounded-pill text-black">VIEW</button></td>
+                              </tr>
+                              <tr class="border-bottom">
+                                <td scope="row"><a href="" class=" text-decoration-none text-black">#451231</a></td>
+                                <td>Mar 25, 2016</td>
+                                <td>3</td>
+                                <td>$150.00</td>
+                                <td><span class="badge bg-success">Completed</span></td>
+                                <td> <button class="btn rounded-pill text-black">VIEW</button></td>
+                                </tr>
+
+                              <tr class="border-bottom">
+                                <td scope="row"><a href="" class=" text-decoration-none text-black">#451231</a></td>
+                                <td>Mar 25, 2016</td>
+                                <td>3</td>
+                                <td>$150.00</td>
+                                <td><span class="badge bg-danger">Danger</span></td>
+                                <td> <button class="btn rounded-pill text-black">VIEW</button></td>
+
+                              </tr>
+                              <tr class="border-bottom">
+                                <td scope="row"><a href="" class=" text-decoration-none text-black">#451231</a></td>
+                                <td>Mar 25, 2016</td>
+                                <td>2</td>
+                                <td>$ 99.00</td>
+                                <td><span class="badge bg-info">On Hold</span></td>
+                                <td> <button class="btn rounded-pill text-black">VIEW</button></td>
+                              </tr>
+
+                              <tr>
+                                <td scope="row"><a href="" class=" text-decoration-none text-black">#451231</a></td>
+                                <td>Mar 25, 2016</td>
+                                <td>3</td>
+                                <td>$150.00</td>
+                                <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                <td> <button class="btn rounded-pill text-black">VIEW</button></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="tab-pane fade p-3 " id="address" role="tabpanel">
+                    <div class="table-responsive">
+                        <table class="table table-borderless">
+                            <thead>
+                              <tr class="table-header">
+                                <th scope="col">Company</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Country</th>
+                                <th scope="col">Phone</th>
+                                <th></th>
+                              
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="border-bottom alert alert-dismissible">
+                                <td scope="row"><a href="" class=" text-decoration-none text-black">Nokia</a></td>
+                                <td>Adam Smith</td>
+                                <td>9/4 C Babor Road, Mohammad Pur, Dhaka</td>
+                                <td>Bangladesh</td>
+                                <td>+884 5452 6452</td>
+                                <td> 
+                                    <button class="btn text-black rounded-0 edit-btn" style="margin-right: -4px;">
+                                        <span class="material-symbols-outlined fw-light">
+                                        edit
+                                        </span>
+                                    </button>
+                                    <button class="btn text-black rounded-0 cancel-btn"  type="button" class="btn-close" data-bs-dismiss="alert">
+                                        <span class="material-symbols-outlined fw-light">
+                                        close
+                                        </span>
+                                    </button>
+                                </td>
+
+                              </tr>
+
+                              <tr class="border-bottom alert alert-dismissible">
+                                <td scope="row"><a href="" class=" text-decoration-none text-black">Samsung</a></td>
+                                <td>Adam Smith</td>
+                                <td>9/4 C Babor Road, Mohammad Pur, Dhaka</td>
+                                <td>Bangladesh</td>
+                                <td>+884 5452 6452</td>
+                                <td> 
+                                    <button class="btn text-black rounded-0 edit-btn" style="margin-right: -4px;">
+                                        <span class="material-symbols-outlined fw-light">
+                                        edit
+                                        </span>
+                                    </button>
+                                    <button class="btn text-black rounded-0 cancel-btn"  type="button" class="btn-close" data-bs-dismiss="alert">
+                                        <span class="material-symbols-outlined fw-light">
+                                        close
+                                        </span>
+                                    </button>
+                                </td>
+                              </tr>
+
+                              <tr class="border-bottom alert alert-dismissible">
+                                <td scope="row"><a href="" class=" text-decoration-none text-black">Motorola</a></td>
+                                <td>Adam Smith</td>
+                                <td>9/4 C Babor Road, Mohammad Pur, Dhaka</td>
+                                <td>Bangladesh</td>
+                                <td>+884 5452 6452</td>
+                                <td> 
+                                    <button class="btn text-black rounded-0 edit-btn" style="margin-right: -4px;">
+                                        <span class="material-symbols-outlined fw-light">
+                                        edit
+                                        </span>
+                                    </button>
+                                    <button class="btn text-black rounded-0 cancel-btn"  type="button" class="btn-close" data-bs-dismiss="alert">
+                                        <span class="material-symbols-outlined fw-light">
+                                        close
+                                        </span>
+                                    </button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+
+                <!-- Profile Details -->
+                <div class="tab-pane fade p-3" id="details" role="tabpanel">
+                    <div class="d-sm-flex">
+                        <div class="text-center">
+                            <img src="../IMAGES/avater.jpg" alt="" class=" rounded-circle mb-3" style="width:180px;">
+                            <small class="d-block"> <a href="" class=" text-decoration-none text-black" style="font-size:12px ;">CHANGE IMAGE</a></small>
+                        </div>
+                        <div class="p-4">
+                            <ul class="list-unstyled details-list ">
+                                <li>
+                                    <span class="d-inline-block">Full Name:</span> Johanna Doe
+                                </li>
+                                <li>
+                                    <span class="d-inline-block">Country:</span> USA
+                                </li>
+                                <li>
+                                    <span class="d-inline-block">Email:</span> mail@gmail.com
+                                </li>
+                                <li>
+                                    <span class="d-inline-block">Phone:</span> +880123123
+                                </li>
+                                <li>
+                                    <span class="d-inline-block"  >Date of Birth:</span> Dec , 22 ,1991
+                                </li>                           
+                            </ul>
+                        </div>
+                    </div>
+  
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ========================================================================================== -->
+  <!-- ----------------------------------- FOOTER SECTION --------------------------------------- -->
+  <!-- ========================================================================================== -->
+  <section class="footer-section">
+    <div class="container py-5 text-center text-sm-start">
+      <div class="row  pt-5">
+        <!-- COLUMN 1 -->
+        <div class="col-md-3 col-sm-6 pb-5">
+          <h5 class="mb-4">Contact</h5>
+          <p>20464 Hirthe Curve Suite, Emardton, CT 12471-4107</p>
+          <p>+5(305) 785-0437</p>
+          <p>info@example.com</p>
+          <ul class=" list-inline socials py-2">
+            <li class=" list-inline-item">
+              <a href="" class="text-white rounded-circle facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+
+            <li class=" list-inline-item">
+              <a href="" class="text-white rounded-circle twitter"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+
+            <li class=" list-inline-item">
+              <a href="" class="text-white rounded-circle vimeo "><i class="fa-brands fa-vimeo-v "></i></a>
+
+            </li>
+
+            <li class=" list-inline-item">
+              <a href="" class="text-white rounded-circle gplus"><i class="fa-brands fa-google-plus-g"></i></a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="col-md-3 col-sm-6 column-link pb-5">
+          <h5 class="mb-4">Category</h5>
+          <p><a href="shop.html" class=" text-decoration-none">Men</a></p>
+          <p><a href="shop.html" class=" text-decoration-none">Women</a></p>
+          <p><a href="shop.html" class=" text-decoration-none">Kids</a></p>
+          <p><a href="shop.html" class=" text-decoration-none">Accessories</a></p>
+          <p><a href="" class=" text-decoration-none">Shoe</a></p>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="col-md-3 col-sm-6 column-link pb-5">
+          <h5 class="mb-4">Useful Link</h5>
+          <p><a href="" class=" text-decoration-none">News and Tips</a></p>
+          <p><a href="" class=" text-decoration-none">About Us</a></p>
+          <p><a href="" class=" text-decoration-none">Support</a></p>
+          <p><a href="shop.html" class=" text-decoration-none">Our Shop</a></p>
+          <p><a href="contact.html" class=" text-decoration-none">Contact Us</a></p>
+        </div>
+
+        <!-- COLUMN 4 -->
+        <div class="col-md-3 col-sm-6 column-link">
+          <h5 class="mb-4">Our Policies</h5>
+          <p><a href="" class=" text-decoration-none">Privacy Policy</a></p>
+          <p><a href="" class=" text-decoration-none">Terms and Conditions</a></p>
+          <p><a href="" class=" text-decoration-none">Cookie Policy</a></p>
+          <p><a href="" class=" text-decoration-none">Term of Sale</a></p>
+          <p><a href="" class=" text-decoration-none">Free Shipping & Returns</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footend -->
+    <div class="foot-end d-md-flex d-block justify-content-between text-center py-4 px-5 align-items-center ">
+      <p class="ms-lg-4 mb-0 text-white">Logo © 2018 all right reserved</p>
+      <img src="../IMAGES/logo-alt.png" class="img-fluid my-md-0 my-4" alt="">
+      <div class="credit-cards me-lg-4 m-0">
+        <img src="../IMAGES/card-1.jpg" class="me-2 rounded-3" alt="" style="max-width: 40px;">
+        <img src="../IMAGES/card-2.jpg" class="me-2 rounded-3" alt="" style="max-width: 40px;">
+        <img src="../IMAGES/card-3.jpg" class="me-2 rounded-3" alt="" style="max-width: 40px;">
+        <img src="../IMAGES/card-4.jpg" class="rounded-3" alt="" style="max-width: 40px;">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../bootstrap/js/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        /* NAVBAR - CART BUTTON JAVASCRIPT */
+        var toastTrigger = document.getElementById('liveToastBtn')
+        var toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            })
+        }
+    </script>
+</body>
+
+</html>

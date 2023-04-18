@@ -1,0 +1,328 @@
+@font-face {
+    font-family: 'futura';
+    src: url("../FONT/Futura\ Book\ Regular.otf") format('opentype');
+  }
+
+*{
+    font-family: 'futura';
+    box-sizing: border-box;
+
+}
+
+button:focus, input:focus{
+    box-shadow: none !important;
+}
+
+::selection{
+    background-color: #ff7168;
+    color: white;
+}
+/* ====================================================================================== */
+/* --------------------------------------- HEADER --------------------------------------- */
+/* ====================================================================================== */
+.header-top span, .header-top a,.header-top select{
+    font-size: 12px;
+}
+.header-top a:hover{
+    color: #ff4135 !important;
+}
+.header-top select:focus{
+    outline: none !important;
+}
+
+/* ====================================================================================== */
+/* --------------------------------------- NAVBAR --------------------------------------- */
+/* ====================================================================================== */
+
+/* navbar */
+
+
+
+.nav-link {
+    color: #3f434e !important;
+    font-size: 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #ff4135 !important;
+}
+
+.navbar-toggler {
+    top: 15px;
+    left: 15px;
+}
+
+.nav-buttons {
+    top: 10px;
+    right: 15px;
+}
+
+/* search button and cart button */
+.search-btn,
+.cart-btn {
+    background-color: #f2f3f5;
+}
+
+.search-btn {
+    height: 44px;
+    width: 44px;
+}
+
+.cart-btn {
+    font-size: 14px;
+}
+
+/* on search button click */
+.search {
+    position: sticky;
+    width: 100%;
+    z-index: 3;
+    top: 65px;
+    
+}
+
+.search .card {
+    background-color: #212329;
+}
+
+.search input {
+    padding-top: 12px;
+}
+
+
+/* on cart button click */
+.cart-btn-popup .btn-close{
+    background: none !important;
+
+}
+
+.cart-btn-popup .btn-close:hover{
+    color: #ff4135;
+}
+
+.cart-btn-popup {
+    position: fixed;
+    top: 60px;
+    right: 25px;
+}
+
+.cart-btn-popup .toast {
+    width: 440px !important;
+}
+
+.cart-btn img {
+    width: 20px;
+    padding-bottom: 10px;
+}
+
+.cart-btn-popup .card-title {
+    font-size: 13px !important;
+}
+
+
+.cart-btn-popup .toast-btn {
+    background-color: #212329;
+}
+
+.toast-btn {
+    padding: 16px 22px;
+    width: 170px;
+}
+
+.toast-btn:hover {
+    background-color: #ff4135;
+}
+
+
+/* ====================================================================================== */
+/* -------------------------------------- BREADCRUMB ------------------------------------ */
+/* ====================================================================================== */
+
+.page-path{
+    background-color: #f2f3f5;
+}
+
+/* ====================================================================================== */
+/* -------------------------------------- DASHBOARD SECTION ----------------------------- */
+/* ====================================================================================== */
+.dash-section .nav-link.active{
+    background-color: #ff4135 !important;
+    color: white !important;
+}
+
+.dash-section .nav-link{
+    border-radius: unset !important ;
+   padding: 12px 20px;
+}
+
+/* dashboard */
+
+.dash-section .card-title{
+    font-size: 18px;
+}
+.dash-section .card-text{
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.dash-section .table-header{
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.dash-section th, .dash-section td{
+    font-size: 15px;
+    padding: 15px;
+}
+
+td button{
+    font-size: 12px !important;
+    border: 1px solid #dcdcdc !important;
+    padding: 8px 25px !important;
+}
+
+td button:hover{
+    border-color: #ff4135 !important;
+    color: #ff4135 !important;
+}
+
+.edit-btn{
+    border-top-left-radius: 30px !important;
+    border-bottom-left-radius: 30px !important;
+    padding: 6.5px 20px !important;
+    color: gray !important;
+
+
+}
+
+.cancel-btn{
+    border-top-right-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    padding: 4px 18px !important;
+    color: gray !important;
+
+}
+
+.edit-btn span{
+    font-size: 15px;
+}
+
+.cancel-btn span{
+    font-size: 20px;
+
+}
+/* Profile Details */
+.details-list li span{
+    font-weight: bolder;
+    margin-right: 5px;
+    width: 90px;
+}
+
+.details-list li{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+
+/* ====================================================================================== */
+/* ------------------------------------- FOOTER SECTION --------------------------------- */
+/* ====================================================================================== */
+
+.footer-section{
+    background-color: #f8f9fa;
+}
+
+.footer-section p{
+    font-size: 15px;
+}
+
+.footer-section li{
+    padding: 10px 0;
+}
+
+/* link hover */
+.column-link a{
+    color: #3f434e;
+}
+.column-link a:hover{
+    text-decoration: underline !important;
+}
+
+/* socials */
+.socials .facebook{
+    padding: 13px 17px 9px 17px;
+}
+
+.socials .twitter{
+    padding: 13px 13px 9px 13px; 
+}
+
+.socials .vimeo{
+    padding: 13px 14px 9px 14px; 
+}
+
+.socials .gplus{
+    padding: 13px 11px 9px 11px; 
+}
+
+/* social icon hover */
+
+.socials a{
+    background-color: #212329;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.socials a:hover{
+    background-color: #ff4135;
+}
+
+/* footend */
+.foot-end{
+    background-color: #343a40;
+}
+/* ====================================================================================== */
+/* -------------------------------------- MEDIA QUERY ----------------------------------- */
+/* ====================================================================================== */
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    
+    /* ----------------------------------  NAVBAR -------------------------------- */
+        .navbar-brand img{
+            width: 30vw;
+            margin-top: 10px;
+        }
+        .navbar-brand{
+            margin-left: 40px !important;
+            
+        }
+    
+        .search-btn{
+            height: 40px;
+            width: 40px;
+        }
+    
+        .cart-btn-popup{
+            right: 0 !important;
+        }
+        .cart-btn-popup .toast{
+            width: 320px !important;
+        }
+  
+        /* ------------------------------ DASH SECTION ---------------------------- */
+
+        .dash-section .nav-link{    
+            padding: 8px 15px;
+        }
+
+}
+    
+    
+    
+    @media screen and (min-width:480px) and (max-width:600px){
+    
+    /* ----------------------------------  NAVBAR -------------------------------- */
+        .navbar-brand{
+            margin-left: 20% !important;
+        }
+           
+    }

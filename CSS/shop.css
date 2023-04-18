@@ -1,0 +1,620 @@
+@font-face {
+    font-family: 'futura';
+    src: url("../FONT/Futura\ Book\ Regular.otf") format('opentype');
+}
+
+
+
+h1,h2,h3,h4,h5,h6,p{
+    color: #3f434e;
+}
+
+* {
+    font-family: 'futura';
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+
+}
+
+button:focus,
+input:focus {
+    box-shadow: none !important;
+}
+
+
+::selection {
+    background-color: #ff7168;
+    color: white;
+}
+/* ====================================================================================== */
+/* --------------------------------------- HEADER --------------------------------------- */
+/* ====================================================================================== */
+.header-top span, .header-top a,.header-top select{
+    font-size: 12px;
+}
+.header-top a:hover{
+    color: #ff4135 !important;
+}
+.header-top select:focus{
+    outline: none !important;
+}
+
+/* ====================================================================================== */
+/* --------------------------------------- NAVBAR --------------------------------------- */
+/* ====================================================================================== */
+
+/* navbar */
+
+
+
+.nav-link {
+    color: #3f434e !important;
+    font-size: 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #ff4135 !important;
+}
+
+.navbar-toggler {
+    top: 15px;
+    left: 15px;
+}
+
+.nav-buttons {
+    top: 10px;
+    right: 15px;
+}
+
+/* search button and cart button */
+.search-btn,
+.cart-btn {
+    background-color: #f2f3f5;
+}
+
+.search-btn {
+    height: 44px;
+    width: 44px;
+}
+
+.cart-btn {
+    font-size: 14px;
+}
+
+/* on search button click */
+.search {
+    position: sticky;
+    width: 100%;
+    z-index: 3;
+    top: 65px;
+    
+}
+
+.search .card {
+    background-color: #212329;
+}
+
+.search input {
+    padding-top: 12px;
+}
+
+
+/* on cart button click */
+.cart-btn-popup .btn-close{
+    background: none !important;
+
+}
+
+.cart-btn-popup .btn-close:hover{
+    color: #ff4135;
+}
+
+.cart-btn-popup {
+    position: fixed;
+    top: 60px;
+    right: 25px;
+}
+
+.cart-btn-popup .toast {
+    width: 440px !important;
+}
+
+.cart-btn img {
+    width: 20px;
+    padding-bottom: 10px;
+}
+
+.cart-btn-popup .card-title {
+    font-size: 13px !important;
+}
+
+
+.cart-btn-popup .toast-btn {
+    background-color: #212329;
+}
+
+.toast-btn {
+    padding: 16px 22px;
+    width: 170px;
+}
+
+.toast-btn:hover {
+    background-color: #ff4135;
+}
+
+
+/* ====================================================================================== */
+/* -------------------------------------- BREADCRUMB ------------------------------------ */
+/* ====================================================================================== */
+
+.page-path{
+    background-color: #f2f3f5;
+}
+
+/* ====================================================================================== */
+/* ------------------------------------ SHOP SECTION ------------------------------------ */
+/* ====================================================================================== */
+
+
+/* ---- filter bar ---- */
+
+/* icons */
+.ic-grid{
+    font-size: 20px;
+    color: #3f434e;
+}
+
+.ic-list{
+    font-size: 27px;
+    color: #898a8f;
+}
+
+.filter-icon span:hover{
+    color: #ff4135;
+ 
+}
+
+
+/* showing result */
+.show-result span{
+    color: #3f434e;
+}
+
+.show-result p{
+    color: #898a8f;
+}
+
+/* drop down button */
+.filter-bar button{
+    font-size: 14px;
+}
+
+.filter-bar p{
+    font-size: 15px;
+}
+
+.d-down i{
+    font-size: 10px;
+}
+
+.d-down li{
+    font-size: 14px;
+}
+
+.d-down ul{
+    transform: translate3d(-30px, 40px, 0px) !important;
+}
+
+
+/* flex basis */
+
+.filter-icon{
+    flex-basis: 15%;
+}
+
+.show-result{
+    flex-basis: 55%;
+}
+
+.d-down{
+    flex-basis: 15%;
+}
+
+
+/* ---- side bar ---- */
+
+.search-div:focus-within{
+    outline: 1px solid #ff4135;
+}
+.search-div input{
+    cursor: pointer;
+}
+.search-div{
+    outline: 1px solid #898a8f;
+    cursor: pointer;
+
+}
+
+.search-div input:focus{
+    outline: none;
+}
+.search-div i{
+    color: #3f434e;
+}
+
+.categories a{
+    color: #898a8f;
+    font-size: 15px;
+}
+
+.categories a:hover{
+    color: #3f434e;
+}
+
+
+.size .form-check-input:checked{
+    background-color: #3f434e  !important;
+    border: 1px solid #3f434e  !important;
+}
+
+.size p{
+    color: #898a8f;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.size label{
+    cursor: pointer;
+}
+
+.size p:hover{
+    color: #3f434e;
+}
+
+.colors .form-check-input{
+    height: 30px !important;
+    width: 30px !important;
+}
+
+#tan{
+   background-color: #dcbba8 !important;
+   border: none !important;
+
+}
+
+#green{
+   background-color: #38575a !important;
+   border: none !important;
+
+}
+
+#blue{
+   background-color: #49c5ff !important;
+   border: none !important;
+
+}
+
+#red{
+   background-color: #ff5c5c !important;
+   border: none !important;
+
+}
+
+#black{
+   background-color: #343a40 !important;
+   border: none !important;
+
+}
+
+.colors input:checked[type=checkbox]{
+    background-image: url(../IMAGES/check.png) !important;
+    background-size: 18px !important;
+}
+
+/* ----- shop main ----- */
+
+
+/* IMAGE HOVER CHANGE */
+.collection-img1 {
+    transition: all 0.5s;
+}
+
+.collection-img2 {
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.season-card:hover .collection-img1 {
+    transform: scale(0.9);
+    opacity: 0;
+
+}
+
+.season-card:hover .collection-img2 {
+    transform: scale(1);
+    opacity: 1;
+
+}
+
+/* BUTTONS ON IMAGE */
+.overlay-buttons span {
+    font-size: 20px;
+    padding-top: 7px;
+    transition: all 0.3s;
+}
+
+.overlay-buttons button {
+    padding: 7px 14px;
+}
+
+.overlay-buttons button:hover span {
+    color: #ff4135;
+}
+
+.overlay-buttons{
+    opacity: 0;
+}
+
+.season-card:hover .overlay-buttons {
+    opacity: 1;
+}
+
+/* ADD TO CART BUTTON */
+.collection-btn {
+    background-color: #ff4135;
+    font-size: 12px;
+    transition: all 0.3s;
+}
+
+.collection-btn:hover {
+    background-color: #ff7167;
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: transform 0.3s;
+    transform: translateY(-50px) !important;
+
+}
+
+.season-card:hover .overlay {
+    transform: translateY(-95px) !important;
+    opacity: 1;
+}
+
+
+/* NAME AND PRICE */
+.collection-info a {
+    color: #3f434e;
+    font-size: 17px;
+
+}
+
+/* LABEL BADGE */
+.badge {
+    transform: skew(-10deg);
+    font-size: 10px;
+    padding: 8px 10px;
+    font-weight: lighter;
+}
+
+.badge1 {
+    background-color: #667eea;
+}
+
+.badge2 {
+    background-color: #ff3385;
+}
+
+
+/* MODAL */
+
+.modal-rightside span {
+    color: #3f434e;
+}
+
+/* drop down */
+.modal-rightside button {
+    border: 1px solid silver;
+    padding: 15px;
+}
+
+.modal-rightside button:focus {
+    border: 1px solid #ff4135;
+
+}
+
+.modal-rightside li a {
+    padding: 12px;
+    font-size: 14px;
+
+}
+
+.modal-rightside span {
+    font-size: 14px;
+}
+
+.modal-rightside i {
+    font-size: 10px;
+}
+
+.modal-rightside .dropdown-item.active {
+    background-color: #f6f6f6 !important;
+}
+
+.modal-rightside .btn-group,.modal-btn {
+    width: 85%;
+}
+
+.modal-btn{
+    background-color: #ff4135;
+    transition: all 0.5s;
+
+}
+
+.modal-btn:hover{
+    background-color: #ff7168;
+}
+
+
+.modal-socials i{
+    color: #3f434e;
+    margin-right: 28px;
+    transition: all 0.5s;
+}
+
+.modal-socials a:hover i{
+    color: #ff4135;
+
+}
+
+/* ====================================================================================== */
+/* ------------------------------------- FOOTER SECTION --------------------------------- */
+/* ====================================================================================== */
+
+.footer-section{
+    background-color: #f8f9fa;
+}
+
+.footer-section p{
+    font-size: 15px;
+}
+
+.footer-section li{
+    padding: 10px 0;
+}
+
+/* link hover */
+.column-link a{
+    color: #3f434e;
+}
+.column-link a:hover{
+    text-decoration: underline !important;
+}
+
+/* socials */
+.socials .facebook{
+    padding: 13px 17px 9px 17px;
+}
+
+.socials .twitter{
+    padding: 13px 13px 9px 13px; 
+}
+
+.socials .vimeo{
+    padding: 13px 14px 9px 14px; 
+}
+
+.socials .gplus{
+    padding: 13px 11px 9px 11px; 
+}
+
+/* social icon hover */
+
+.socials a{
+    background-color: #212329;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.socials a:hover{
+    background-color: #ff4135;
+}
+
+/* footend */
+.foot-end{
+    background-color: #343a40;
+}
+
+
+/* ====================================================================================== */
+/* -------------------------------------- MEDIA QUERY ----------------------------------- */
+/* ====================================================================================== */
+
+@media screen and (min-width:320px) and (max-width:480px) {
+
+    /* ----------------------------------  NAVBAR -------------------------------- */
+    .navbar-brand img {
+        width: 30vw;
+    }
+
+    .navbar-brand {
+        margin-left: 40px !important;
+
+    }
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .search-btn {
+        height: 40px;
+        width: 40px;
+    }
+
+    .cart-btn-popup {
+        right: 0 !important;
+    }
+
+    .cart-btn-popup .toast {
+        width: 320px !important;
+    }
+
+}
+
+@media screen and (min-width:480px) and (max-width:600px) {
+
+    /* ----------------------------------  NAVBAR -------------------------------- */
+    .navbar-brand {
+        margin-left: 20% !important;
+    }
+
+}
+
+
+
+
+/* ----------------------- SEPARATED MEDIA QUERY FOR MODAL ----------------------------- */
+
+@media screen and (min-width:320px) and (max-width: 480px){
+    .modal-dialog {
+        width: 300px;
+        top: 8% !important;
+
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 499px){
+    .modal-dialog {
+        max-width: 400px;
+        top: 8% !important;
+
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px){
+    .modal-dialog {
+        max-width: 465px;
+        top: 8% !important;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1164px) {
+    .modal-dialog {
+        top: 5% !important;
+        max-width: 700px;
+
+    }
+
+}
+
+@media screen and (min-width: 1165px) {
+    .modal-dialog {
+        max-width: 1000px;
+    }
+
+}

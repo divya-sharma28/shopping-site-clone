@@ -1,0 +1,789 @@
+@font-face {
+    font-family: 'futura';
+    src: url("../FONT/Futura\ Book\ Regular.otf") format('opentype');
+}
+
+
+
+h1,h2,h3,h4,h5,h6,p{
+    color: #3f434e;
+}
+
+* {
+    font-family: 'futura';
+    box-sizing: border-box;
+
+}
+
+button:focus,
+input:focus {
+    box-shadow: none !important;
+}
+
+
+::selection {
+    background-color: #ff7168;
+    color: white;
+}
+
+/* ====================================================================================== */
+/* --------------------------------------- HEADER --------------------------------------- */
+/* ====================================================================================== */
+.header-top span, .header-top a,.header-top select{
+    font-size: 12px;
+}
+.header-top a:hover{
+    color: #ff4135 !important;
+}
+.header-top select:focus{
+    outline: none !important;
+}
+
+/* ====================================================================================== */
+/* --------------------------------------- NAVBAR --------------------------------------- */
+/* ====================================================================================== */
+
+/* navbar */
+
+
+
+.nav-link {
+    color: #3f434e !important;
+    font-size: 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #ff4135 !important;
+}
+
+.navbar-toggler {
+    top: 15px;
+    left: 15px;
+}
+
+.nav-buttons {
+    top: 10px;
+    right: 15px;
+}
+
+/* search button and cart button */
+.search-btn,
+.cart-btn {
+    background-color: #f2f3f5;
+}
+
+.search-btn {
+    height: 44px;
+    width: 44px;
+}
+
+.cart-btn {
+    font-size: 14px;
+}
+
+/* on search button click */
+.search {
+    position: sticky;
+    width: 100%;
+    z-index: 3;
+    top: 65px;
+    
+}
+
+.search .card {
+    background-color: #212329;
+}
+
+.search input {
+    padding-top: 12px;
+}
+
+
+/* on cart button click */
+.cart-btn-popup .btn-close{
+    background: none !important;
+
+}
+
+.cart-btn-popup .btn-close:hover{
+    color: #ff4135;
+}
+
+.cart-btn-popup {
+    position: fixed;
+    top: 60px;
+    right: 25px;
+}
+
+.cart-btn-popup .toast {
+    width: 440px !important;
+}
+
+.cart-btn img {
+    width: 20px;
+    padding-bottom: 10px;
+}
+
+.cart-btn-popup .card-title {
+    font-size: 13px !important;
+}
+
+
+.cart-btn-popup .toast-btn {
+    background-color: #212329;
+}
+
+.toast-btn {
+    padding: 16px 22px;
+    width: 170px;
+}
+
+.toast-btn:hover {
+    background-color: #ff4135;
+}
+
+/* ====================================================================================== */
+/* ----------------------------------- SLIDER SECTION ----------------------------------- */
+/* ====================================================================================== */
+
+.slider-section {
+    overflow: hidden;
+    background-color: #f2f3f5;
+
+}
+
+/* ----- carousel left content ----- */
+
+
+
+.slider-left h1 {
+    font-size: 44px;
+}
+
+.slider-left h3 {
+    font-size: 26px;
+}
+
+.shop-btn {
+    background-color: #ff4135;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.shop-btn:hover {
+    background-color: #ff7167;
+}
+
+/* ----- carousel right image ----- */
+
+.slider-right img {
+    z-index: 1;
+}
+
+.slider-right {
+    z-index: 2;
+}
+
+.converse-img {
+    width: 85%;
+}
+
+.slider-right .span-b {
+    font-size: 520px;
+    z-index: -1;
+    top: -36%;
+    right: 8%;
+}
+
+.slider-right .span-c {
+    font-size: 500px;
+    z-index: -1;
+    top: -45%;
+    right: 8%;
+}
+
+
+/* CAROUSEL ARROW BUTTONS */
+.slider-section .arrow-btn {
+    top: 16%;
+    width: 11%;
+}
+
+.slider-section .carousel-control-prev {
+    transform: translateX(-55px);
+    opacity: 0 !important;
+    transition: all 0.5s ease;
+
+}
+
+.slider-section .carousel-control-next {
+    transform: translateX(55px);
+    opacity: 0 !important;
+    transition: all 0.5s ease;
+    z-index: 2 !important;
+
+}
+
+.slider-section:hover .arrow-btn {
+    transform: translateX(0);
+    opacity: 1 !important;
+}
+
+
+.arrow-circle {
+    width: 60px;
+    height: 60px;
+    transition: all 0.4s ease;
+
+}
+
+.arrow-circle:hover {
+    background-color: #ff4135 !important;
+}
+
+.arrow-circle .img-in {
+    width: 30px;
+}
+
+.img-out-left {
+    width: 45px;
+    right: -20px;
+    top: 8px;
+    transition: all 0.2s ease-in;
+}
+
+.img-out-right {
+    width: 45px;
+    right: 35px;
+    top: 8px;
+    transition: all 0.1s ease-in;
+}
+
+.arrow-circle:hover .img-out-left,
+.arrow-circle:hover .img-out-right {
+    opacity: 0 !important;
+
+}
+
+/* ====================================================================================== */
+/* --------------------------------- CATEGORIES SECTION --------------------------------- */
+/* ====================================================================================== */
+
+
+.categories-section {
+    overflow: hidden;
+}
+
+.cat-name-btn button {
+    font-size: 13px;
+    border: 1px solid silver;
+    transition: all 0.5s;
+}
+
+.cat-name-btn button:hover {
+
+    border-color: #ff4135;
+    color: #ff4135 !important;
+}
+
+.categories-section img {
+    transition: all 0.5s;
+}
+
+.categories-section img:hover {
+    transform: scale(1.3);
+}
+
+
+/* ====================================================================================== */
+/* ----------------------------------- SEASON SECTION ----------------------------------- */
+/* ====================================================================================== */
+
+/* BACKGROUND IMAGE */
+.season-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../IMAGES/cta.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* TITLE */
+.season-section h1 {
+    font-size: 44px;
+}
+
+/* SHOP NOW BUTTON */
+.season-section .shop-btn {
+    color: #3f434e !important;
+    background-color: white;
+    font-size: 15px;
+}
+
+.season-section .shop-btn:hover {
+    background-color: #ff4135;
+    color: white !important;
+}
+
+/* ====================================================================================== */
+/* --------------------------------- COLLECTION SECTION --------------------------------- */
+/* ====================================================================================== */
+
+/* IMAGE HOVER CHANGE */
+.collection-img1 {
+    transition: all 0.5s;
+}
+
+.collection-img2 {
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.season-card:hover .collection-img1 {
+    transform: scale(0.9);
+    opacity: 0;
+
+}
+
+.season-card:hover .collection-img2 {
+    transform: scale(1);
+    opacity: 1;
+
+}
+
+/* BUTTONS ON IMAGE */
+.overlay-buttons span {
+    font-size: 20px;
+    padding-top: 7px;
+    transition: all 0.3s;
+}
+
+.overlay-buttons button {
+    padding: 7px 14px;
+}
+
+.overlay-buttons button:hover span {
+    color: #ff4135;
+}
+
+.overlay-buttons {
+    opacity: 0;
+}
+
+.season-card:hover .overlay-buttons {
+    opacity: 1;
+}
+
+/* ADD TO CART BUTTON */
+.collection-btn {
+    background-color: #ff4135;
+    font-size: 12px;
+    transition: all 0.3s;
+}
+
+.collection-btn:hover {
+    background-color: #ff7167;
+}
+
+.collection-section .overlay {
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: transform 0.3s;
+    transform: translateY(-50px) !important;
+
+}
+
+.collection-section .season-card:hover .overlay {
+    transform: translateY(-95px) !important;
+    opacity: 1;
+}
+
+
+/* NAME AND PRICE */
+.collection-info a {
+    color: #3f434e;
+    font-size: 17px;
+
+}
+
+/* LABEL BADGE */
+.collection-section .badge {
+    transform: skew(-10deg);
+    font-size: 10px;
+    padding: 8px 10px;
+    font-weight: lighter;
+}
+
+.badge1 {
+    background-color: #667eea;
+}
+
+.badge2 {
+    background-color: #ff3385;
+}
+
+/* CAROUSEL INDICATORS */
+.carousel-indicators button {
+    height: 8px !important;
+    width: 8px !important;
+    border-radius: 50% !important;
+    border: 1px solid silver !important;
+}
+
+.carousel-indicators .active {
+    background-color: black !important;
+    border: 1px solid black !important;
+}
+
+/* MODAL */
+
+.modal-rightside span {
+    color: #3f434e;
+}
+
+.modal-rightside button {
+    border: 1px solid silver;
+    padding: 15px;
+}
+
+.modal-rightside button:focus {
+    border: 1px solid #ff4135;
+
+}
+
+.modal-rightside li a {
+    padding: 12px;
+    font-size: 14px;
+
+}
+
+.modal-rightside span {
+    font-size: 14px;
+}
+
+.modal-rightside i {
+    font-size: 10px;
+}
+
+.modal-rightside .dropdown-item.active {
+    background-color: #f6f6f6 !important;
+}
+
+.modal-rightside .btn-group,.modal-btn {
+    width: 85%;
+}
+
+.modal-btn{
+    background-color: #ff4135;
+    transition: all 0.5s;
+
+}
+
+.modal-btn:hover{
+    background-color: #ff7168;
+}
+
+
+.modal-socials i{
+    color: #3f434e;
+    margin-right: 28px;
+    transition: all 0.5s;
+}
+
+.modal-socials a:hover i{
+    color: #ff4135;
+
+}
+
+
+/* ====================================================================================== */
+/* --------------------------------------- DEAL SECTION --------------------------------- */
+/* ====================================================================================== */
+
+.deal-section{
+    background-color: #f2f3f5;
+}
+
+.deal-content h1{
+    font-size: 44px;
+}
+
+.deal-content p{
+    font-size: 18px;
+    margin: 40px 0;
+}
+.deal-img{
+    z-index: 1;
+}
+.span-o{
+    font-size: 500px;
+    top: -54%;
+    right: 8%;
+    z-index: -1;
+}
+
+.deal-img img{
+    animation: shoe 2s infinite alternate-reverse;
+
+}
+@keyframes shoe {
+    0%{
+    }
+    100%{
+        transform: translateY(15px);
+
+    }
+}
+
+/* ====================================================================================== */
+/* --------------------------------------- FOLLOW SECTION ------------------------------- */
+/* ====================================================================================== */
+
+.follow-overlay{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    opacity: 0;
+    transition: all 0.3s;
+
+}
+
+.follow-overlay .follow-btn{
+    color: white;
+    transition: all 0.3s;
+
+}
+
+.follow-overlay .follow-btn:hover{
+    color: #ff4135;
+}
+
+.follow-buttons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.follow-img:hover .follow-overlay{
+    opacity: 1;
+}
+
+/* ====================================================================================== */
+/* -------------------------------------- POLICY SECTION -------------------------------- */
+/* ====================================================================================== */
+
+.policy-section span,.policy-section i{
+    color: #898a8f;
+  font-size: 50px;
+}
+.policy-section p{
+  font-size: 15px;
+}
+
+/* ====================================================================================== */
+/* ----------------------------------- NEWSLETTER SECTION ------------------------------- */
+/* ====================================================================================== */
+.newsletter-section{
+    background-color: #f2f3f5;
+}
+
+.newsletter-section h2{
+    font-size: 30px;
+}
+.newsletter-section input{
+    cursor: pointer;
+}
+.newsletter-section input:focus{
+    outline: none;
+}
+
+/* ====================================================================================== */
+/* ------------------------------------- FOOTER SECTION --------------------------------- */
+/* ====================================================================================== */
+
+.footer-section{
+    background-color: #f8f9fa;
+}
+
+.footer-section p{
+    font-size: 15px;
+}
+
+.footer-section li{
+    padding: 10px 0;
+}
+
+/* link hover */
+.column-link a{
+    color: #3f434e;
+}
+.column-link a:hover{
+    text-decoration: underline !important;
+}
+
+/* socials */
+.socials .facebook{
+    padding: 13px 17px 9px 17px;
+}
+
+.socials .twitter{
+    padding: 13px 13px 9px 13px; 
+}
+
+.socials .vimeo{
+    padding: 13px 14px 9px 14px; 
+}
+
+.socials .gplus{
+    padding: 13px 11px 9px 11px; 
+}
+
+/* social icon hover */
+
+.socials a{
+    background-color: #212329;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.socials a:hover{
+    background-color: #ff4135;
+}
+
+/* footend */
+.foot-end{
+    background-color: #343a40;
+}
+
+
+/* ====================================================================================== */
+/* -------------------------------------- MEDIA QUERY ----------------------------------- */
+/* ====================================================================================== */
+
+@media screen and (min-width:320px) and (max-width:480px) {
+
+    /* ----------------------------------  NAVBAR -------------------------------- */
+    .navbar-brand img {
+        width: 30vw;
+    }
+
+    .navbar-brand {
+        margin-left: 40px !important;
+
+    }
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .search-btn {
+        height: 40px;
+        width: 40px;
+    }
+
+    .cart-btn-popup {
+        right: 0 !important;
+    }
+
+    .cart-btn-popup .toast {
+        width: 320px !important;
+    }
+
+    /* ---------------------------------- SLIDER -------------------------------- */
+    .slider-section .arrow-btn {
+        display: none;
+    }
+
+    .converse-img {
+        width: 100%;
+        padding-bottom: 95px;
+    }
+
+    .slider-section .span-b {
+        font-size: 400px;
+        top: -42%;
+        right: -15%;
+    }
+
+    .slider-section .span-c {
+        font-size: 350px;
+        top: -30%;
+        right: -15%;
+
+    }
+
+    /* ------------------------------- DEAL SECTION -------------------------- */
+    .span-o {
+        font-size: 380px;
+        top: -60%;
+        right: 0%;
+
+    }
+
+        
+
+
+}
+
+@media screen and (min-width:480px) and (max-width:600px) {
+
+    /* ----------------------------------  NAVBAR -------------------------------- */
+    .navbar-brand {
+        margin-left: 20% !important;
+    }
+
+    /* ----------------------------------  SLIDER -------------------------------- */
+
+    .converse-img {
+        width: 100%;
+    }
+
+
+
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    .span-o{
+        font-size: 400px;
+    }
+
+}
+
+/* ----------------------- SEPARATED MEDIA QUERY FOR MODAL ----------------------------- */
+@media screen and (min-width:320px) and (max-width: 480px){
+    .modal-dialog {
+        width: 300px;
+        top: 8% !important;
+
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 499px){
+    .modal-dialog {
+        max-width: 400px;
+        top: 8% !important;
+
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px){
+    .modal-dialog {
+        max-width: 465px;
+        top: 8% !important;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1164px) {
+    .modal-dialog {
+        top: 5% !important;
+        max-width: 700px;
+
+    }
+
+}
+
+@media screen and (min-width: 1165px) {
+    .modal-dialog {
+        max-width: 1000px;
+    }
+
+}
